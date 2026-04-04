@@ -1,0 +1,49 @@
+\section{Background}
+\label{sec:background}
+
+This section presents the key concepts related to the study. Section \ref{sec:ssr} describes the SSR method. Section \ref{sec:csr} discusses CSR method. Section \ref{sec:performance_aspects} addresses software performance aspects, and Section \ref{sec:quality_indicators} covers quality indicators in web applications based on  Core Web Vitals (CWV) metrics.
+
+%Fiz pequenas mudanças.
+\subsection{Server-Side Rendering (SSR)}
+\label{sec:ssr}
+
+Server-Side Rendering (SSR) is a web application development methodology in which pages are rendered on the server and sent to the browser \cite{clientServerSide:2020}. When a request is made, the server processes it and returns the page already rendered in HTML to the user's browser.
+
+% In applications that use SSR rendering is handled on the server side, allowing the page to be fully loaded when accessed by the user \citet{clientServerSide:2020}. This results in a faster user experience, especially on low-performance devices, since the server handles the more computationally expensive tasks. Additionally, SSR offers advantages in terms of search engine rankings, as it allows search engines to more easily index page content.
+
+In applications that use SSR, the rendering process is handled on the server, enabling the page to be fully loaded when accessed by the user \citet{clientServerSide:2020}. This approach improves the user experience, particularly on low-performance devices, as the server performs the more computationally intensive tasks. Moreover, SSR provides advantages in search engine optimization (SEO), as it facilitates the indexing of page content by search engines.
+
+\subsection{Client-Side Rendering (CSR)}
+\label{sec:csr}
+
+Client-Side Rendering is a web page rendering mechanism in which the rendering process takes place in the user's browser \cite{clientServerSide:2020}. The server sends a basic HTML structure with JavaScript responsible for dynamically rendering the content on the client side.
+
+% According to \citet{clientServerSide:2020} CSR allows for more dynamic and interactive applications, as rendering logic and manipulation of the Document Object Model (DOM) occur directly in the user's browser. This can lead to a smoother user experience, especially in highly interactive applications such as Single Page Applications (SPAs), where navigation between pages does not require a full page reload.
+
+CSR enables the development of more dynamic and interactive applications, as both the rendering logic and Document Object Model (DOM) manipulation are executed directly within the user's browser \cite{clientServerSide:2020}. This approach can deliver a smoother and more responsive user experience, particularly in highly interactive scenarios such as Single Page Applications (SPAs), where navigation between views occurs without the need for full page reloads.
+
+\subsection{Software Performance Aspects}
+\label{sec:performance_aspects}
+
+A software performance aspect refers to a non-functional characteristic that describes the operational efficiency of a software system under various execution conditions~\cite{performanceAspects}. These aspects are essential to ensure that the software meets the expected quality and efficiency demanded by users. Key performance metrics include response time, which measures how long the system takes to respond to a request, and resource usage, which evaluates the memory and CPU consumption during application operations.
+
+Performance aspects are critical to user experience, user retention, and the overall success of a web application. Pages that load slowly or respond poorly can frustrate users and cause them to abandon the site. Good performance is also important for Search Engine Optimization (SEO), as search engines tend to favor fast-loading websites~\cite{clientServerSide:2020}. As a result, optimizing these performance aspects has become a crucial part of developing and maintaining websites, requiring an integrated approach that considers both operational efficiency and end-user experience~\cite{pageExp:2022}.
+
+\subsection{Quality Indicators in Web Applications Based on Core Web Vitals Metrics}
+\label{sec:quality_indicators}
+
+CWV is a set of performance metrics introduced by Google\footnote{\url{https://developers.google.com/web/tools/lighthouse}} to help optimize and evaluate the user experience of web pages, guiding improvements in the user experience. The CWV includes:
+
+\textbf{Largest Contentful Paint (LCP)}: measures the loading time of the largest content element visible to the user.
+
+\textbf{First Input Delay (FID)}: measures the time from the user's first interaction to the browser's response.
+
+\textbf{Cumulative Layout Shift (CLS)}: evaluates layout shifts during page loading.
+
+\textbf{First Contentful Paint (FCP)}: measures how quickly content is rendered to the screen, ensuring users see something useful sooner.
+
+\textbf{Speed Index (SI)}: measures how quickly visible content is displayed during page loading, influencing user experience and search engine ranking.
+
+\textbf{Time to Interactive (TTI)}: evaluates page usability. A faster TTI means users can interact with the page sooner.
+
+These metrics are essential not only for ensuring a good user experience but also have significant implications for search engine rankings, as Google has started to consider user experience as a ranking factor for search results~\cite{pageExp:2022}.

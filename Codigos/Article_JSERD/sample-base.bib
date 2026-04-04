@@ -1,0 +1,425 @@
+@inproceedings{sqlBigData:2022,
+author = {Zhu, Feng and Xu, Lijie and Ma, Gang and Ji, Shuping and Wang, Jie and Wang, Gang and Zhang, Hongyi and Wan, Kun and Wang, Mingming and Zhang, Xingchao and Wang, Yuming and Li, Jingpin},
+title = {An empirical study on quality issues of eBay's big data SQL analytics platform},
+year = {2022},
+isbn = {9781450392266},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3510457.3513034},
+doi = {10.1145/3510457.3513034},
+abstract = {Big data SQL analytics platform has evolved as the key infrastructure for business data analysis. Compared with traditional costly commercial RDBMS, scalable solutions with open-source projects, such as SQL-on-Hadoop, are more popular and attractive to enterprises. In eBay, we build Carmel, a company-wide interactive SQL analytics platform based on Apache Spark. Carmel has been serving thousands of customers from hundreds of teams globally for more than 3 years. Meanwhile, despite the popularity of open-source based big data SQL analytics platforms, few empirical studies on service quality issues (e.g., job failure) were carried out for them. However, a deep understanding of service quality issues and taking right mitigation are significant to the ease of manual maintenance efforts. To fill this gap, we conduct a comprehensive empirical study on 1,884 real-word service quality issues from Carmel. We summarize the common symptoms and identify the root causes with typical cases. Stakeholders including system developers, researchers, and platform maintainers can benefit from our findings and implications. Furthermore, we also present lessons learned from critical cases in our daily practice, as well as insights to motivate automatic tool support and future research directions.},
+booktitle = {Proceedings of the 44th International Conference on Software Engineering: Software Engineering in Practice},
+pages = {33–42},
+numpages = {10},
+keywords = {open source, empirical study, big data, SQL on hadoop},
+location = {Pittsburgh, Pennsylvania},
+series = {ICSE-SEIP '22}
+}
+
+@inproceedings{costEfficientCI:2020,
+author = {Jin, Xianhao and Servant, Francisco},
+title = {A cost-efficient approach to building in continuous integration},
+year = {2020},
+isbn = {9781450371216},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3377811.3380437},
+doi = {10.1145/3377811.3380437},
+abstract = {Continuous integration (CI) is a widely used practice in modern software engineering. Unfortunately, it is also an expensive practice --- Google and Mozilla estimate their CI systems in millions of dollars. In this paper, we propose a novel approach for reducing the cost of CI. The cost of CI lies in the computing power to run builds and its value mostly lies on letting developers find bugs early --- when their size is still small. Thus, we target reducing the number of builds that CI executes by still executing as many failing builds as early as possible. To achieve this goal, we propose SmartBuildSkip, a technique which predicts the first builds in a sequence of build failures and the remaining build failures separately. SmartBuildSkip is customizable, allowing developers to select different preferred trade-offs of saving many builds vs. observing build failures early. We evaluate the motivating hypothesis of SmartBuildSkip, its prediction power, and its cost savings in a realistic scenario. In its most conservative configuration, SmartBuildSkip saved a median 30\% of builds by only incurring a median delay of 1 build in a median of 15\% failing builds.},
+booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering},
+pages = {13–25},
+numpages = {13},
+keywords = {build prediction, continuous integration, maintenance cost},
+location = {Seoul, South Korea},
+series = {ICSE '20}
+}
+
+@inproceedings{graphqlPerfomance:2020,
+  author={Lee, Eunggi and Kwon, Kiwoong and Yun, Jungmee},
+  booktitle={2020 International Conference on Information and Communication Technology Convergence (ICTC)}, 
+  title={Performance Measurement of GraphQL API in Home ESS Data Server}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1929-1931},
+  keywords={Restful API;Relational databases;Time measurement;Information and communication technology;Servers;Time factors;Energy storage;home energy storage system;API;GraphQL;RESTful},
+  doi={10.1109/ICTC49870.2020.9289569}
+}
+
+@inproceedings{jvmEnergy:2021,
+author = {Ournani, Zakaria and Belgaid, Mohammed Chakib and Rouvoy, Romain and Rust, Pierre and Penhoat, Jo\"{e}l},
+title = {Evaluating the Impact of Java Virtual Machines on Energy Consumption},
+year = {2021},
+isbn = {9781450386654},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3475716.3475774},
+doi = {10.1145/3475716.3475774},
+abstract = {Background. The Java Virtual Machine (JVM) platforms have known multiple evolutions along the last decades to enhance both the performance they exhibit and the features they offer. With regards to energy consumption, few studies have investigated the energy consumption of code and data structures. Yet, we keep missing an evaluation of the energy efficiency of existing JVM platforms and an identification of the configurations that minimize the energy consumption of software hosted on the JVM.Aims. The purpose of this paper is to investigate the variations in energy consumption between different JVM distributions and parameters to help developers configure the least consuming environment for their Java application.Method. We thus assess the energy consumption of some of the most popular and supported JVM platforms using 12 Java benchmarks that explore different performance objectives. Moreover, we investigate the impact of the different JVM parameters and configurations on the energy consumption of software.Results. Our results show that some JVM platforms can exhibit up to 100\% more energy consumption. JVM configurations can also play a substantial role to reduce the energy consumption during the software execution. Interestingly, the default configuration of the garbage collector was energy efficient in only 50\% of our experiments.Conclusion. Finally, we provide an Open source tool, named J-Referral that recommends an energy-efficient JVM distribution and configuration for any Java application.},
+booktitle = {Proceedings of the 15th ACM / IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)},
+articleno = {15},
+numpages = {11},
+keywords = {JVM Energy Consumption, JVM Energy Efficiency},
+location = {Bari, Italy},
+series = {ESEM '21}
+}
+
+@inproceedings{dataInterchangeMobile:2011,
+author = {Gil, Bruno and Trezentos, Paulo},
+title = {Impacts of data interchange formats on energy consumption and performance in smartphones},
+year = {2011},
+isbn = {9781450308731},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2016716.2016718},
+doi = {10.1145/2016716.2016718},
+abstract = {In this paper, we analyze the impacts of three formats for data interchange, as regards the management of energy and the cost of processing each of the proposed formats in a mobile device; XML, JSON and Protocol Buffers. The tests focused on two network interfaces, WiFi and 3G. The results of this study contribute to the development of mobile applications that require transfer, independently or not, data for a Web Server, like applications of data backup, monitoring of information or any mobile application that synchronizes data with the Web, having as main objectives the impacts of energy and processing in mobile equipment.},
+booktitle = {Proceedings of the 2011 Workshop on Open Source and Design of Communication},
+pages = {1–6},
+numpages = {6},
+keywords = {smartphones, protocol buffers, mobile battery consumption, cloud-based mobile applications, XML, JSON},
+location = {Lisboa, Portugal},
+series = {OSDOC '11}
+}
+
+@inproceedings{powerConsumptionMobile:2017,
+  author={Ayala, Inmaculada and Amor, Mercedes and Fuentes, Lidia and Muñoz, Daniel},
+  booktitle={2017 IEEE 15th Intl Conf on Dependable, Autonomic and Secure Computing, 15th Intl Conf on Pervasive Intelligence and Computing, 3rd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress(DASC/PiCom/DataCom/CyberSciTech)}, 
+  title={An Empirical Study of Power Consumption of Web-Based Communications in Mobile Phones}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={861-866},
+  keywords={Energy consumption;Browsers;Mobile handsets;Web servers;Tools;Data models;Energy Efficiency;Web sockets;Long Polling;Polling;Asynchronous communication},
+  doi={10.1109/DASC-PICom-DataCom-CyberSciTec.2017.144}
+}
+
+@inproceedings{energyConsuptionApi:2023,
+  author={Bangash, Abdul Ali and Eng, Kalvin and Jamal, Qasim and Ali, Karim and Hindle, Abram},
+  booktitle={2023 IEEE/ACM 20th International Conference on Mining Software Repositories (MSR)}, 
+  title={Energy Consumption Estimation of API-usage in Smartphone Apps via Static Analysis}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={272-283},
+  keywords={Energy consumption;Codes;Current measurement;Pipelines;Energy measurement;Estimation;Static analysis;Mobile Application;Static Analysis;Energy Estimation},
+  doi={10.1109/MSR59073.2023.00047}
+}
+
+@article{performanceMobile:2024,
+  title={A large-scale empirical study on mobile performance: energy, run-time and memory},
+  author={Rua, R. and Saraiva, J.},
+  journal={Empirical Software Engineering},
+  volume={29},
+  number={31},
+  year={2024},
+  doi={10.1007/s10664-023-10391-y},
+  url={https://doi.org/10.1007/s10664-023-10391-y}
+}
+
+@article{dataConsumptionIot:2021,
+  title={The Impact of Encoding and Transport for Massive Real-time IoT Data on Edge Resource Consumption},
+  author={Tusa, F. and Clayman, S.},
+  journal={Journal of Grid Computing},
+  volume={19},
+  number={32},
+  year={2021},
+  doi={10.1007/s10723-021-09577-9},
+  url={https://doi.org/10.1007/s10723-021-09577-9}
+}
+
+@article{parsingJson:2019,
+  title={Parsing gigabytes of JSON per second},
+  author={Langdale, G. and Lemire, D.},
+  journal={The VLDB Journal},
+  volume={28},
+  pages={941--960},
+  year={2019},
+  doi={10.1007/s00778-019-00578-5},
+  url={https://doi.org/10.1007/s00778-019-00578-5}
+}
+
+@article{misonJson:2017,
+author = {Li, Yinan and Katsipoulakis, Nikos R. and Chandramouli, Badrish and Goldstein, Jonathan and Kossmann, Donald},
+title = {Mison: a fast JSON parser for data analytics},
+year = {2017},
+issue_date = {June 2017},
+publisher = {VLDB Endowment},
+volume = {10},
+number = {10},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3115404.3115416},
+doi = {10.14778/3115404.3115416},
+abstract = {The growing popularity of the JSON format has fueled increased interest in loading and processing JSON data within analytical data processing systems. However, in many applications, JSON parsing dominates performance and cost. In this paper, we present a new JSON parser called Mison that is particularly tailored to this class of applications, by pushing down both projection and filter operators of analytical queries into the parser. To achieve these features, we propose to deviate from the traditional approach of building parsers using finite state machines (FSMs). Instead, we follow a two-level approach that enables the parser to jump directly to the correct position of a queried field without having to perform expensive tokenizing steps to find the field. At the upper level, Mison speculatively predicts the logical locations of queried fields based on previously seen patterns in a dataset. At the lower level, Mison builds structural indices on JSON data to map logical locations to physical locations. Unlike all existing FSM-based parsers, building structural indices converts control flow into data flow, thereby largely eliminating inherently unpredictable branches in the program and exploiting the parallelism available in modern processors. We experimentally evaluate Mison using representative real-world JSON datasets and the TPC-H benchmark, and show that Mison produces significant performance benefits over the best existing JSON parsers; in some cases, the performance improvement is over one order of magnitude.},
+journal = {Proc. VLDB Endow.},
+month = {jun},
+pages = {1118–1129},
+numpages = {12}
+}
+
+@inproceedings{processorJson:2018,
+  title={A parallel and scalable processor for JSON data},
+  author={Pavlopoulou, C. and Carman, Jr E.P. and Westmann, T. and Carey, M.J. and Tsotras, V.J.},
+  booktitle={Proceedings of the 21st International Conference on Extending Database Technology},
+  year={2018},
+  doi={10.5441/002/EDBT.2018.68},
+  url={https://doi.org/10.5441/002/EDBT.2018.68}
+}
+
+@article{cloudPatternsEnergy:2018,
+title = {Understanding the impact of cloud patterns on performance and energy consumption},
+journal = {Journal of Systems and Software},
+volume = {141},
+pages = {151-170},
+year = {2018},
+issn = {0164-1212},
+doi = {https://doi.org/10.1016/j.jss.2018.03.063},
+url = {https://www.sciencedirect.com/science/article/pii/S0164121218300621},
+author = {Foutse Khomh and S. Amirhossein Abtahizadeh},
+keywords = {Cloud patterns, Energy consumption, Performance optimization, Energy efficiency},
+abstract = {Cloud patterns are abstract solutions to recurrent design problems in the cloud. Previous work has shown that these patterns can improve the Quality of Service (QoS) of cloud applications but their impact on energy consumption is still unknown. In this work, we conduct an empirical study on two multi-processing and multi-threaded applications deployed in the cloud, to investigate the individual and the combined impact of six cloud patterns (Local Database Proxy, Local Sharding Based Router, Priority Queue, Competing Consumers, Gatekeeper and Pipes and Filters) on the energy consumption. We measure the energy consumption using Power-API; an application programming interface (API) written in Java to monitor the energy consumed at the process-level. Results show that cloud patterns can effectively reduce the energy consumption of a cloud-based application, but not in all cases. In general, there appear to be a trade-off between an improved response time of the application and the energy consumption. Moreover, our findings show that migrating an application to a microservices architecture can improve the performance of the application, while significantly reducing its energy consumption. We summarize our contributions in the form of guidelines that developers and software architects can follow during the implementation of a cloud-based application.}
+}
+
+@article{mvcEnergy:2023,
+  title={Estimating the energy consumption of model-view-controller applications},
+  author={Guam{\'a}n, D. and P{\'e}rez, J. and Valdiviezo-Diaz, P.},
+  journal={Journal of Supercomputing},
+  volume={79},
+  pages={13766--13793},
+  year={2023},
+  doi={10.1007/s11227-023-05202-6},
+  url={https://doi.org/10.1007/s11227-023-05202-6}
+}
+
+@article{pwaEnergy:2022,
+title = {A comparative study on the energy consumption of Progressive Web Apps},
+journal = {Information Systems},
+volume = {108},
+pages = {102017},
+year = {2022},
+issn = {0306-4379},
+doi = {https://doi.org/10.1016/j.is.2022.102017},
+url = {https://www.sciencedirect.com/science/article/pii/S0306437922000230},
+author = {Stefan Huber and Lukas Demetz and Michael Felderer},
+keywords = {Mobile software development, Energy-efficiency, Progressive Web Apps, Mobile cross-platform development},
+abstract = {Progressive Web Apps (PWAs) are a promising approach for developing mobile apps, especially when developing apps for multiple mobile systems. As mobile devices are limited with respect to battery capacity, developers should keep the energy footprint of a mobile app as low as possible. The goal of this study is to analyze the difference in energy consumption of PWAs compared to other mobile development approaches. As mobile apps are primarily interactive in nature, we focus on UI rendering and interaction scenarios. For this, we implemented five versions of the same app with different development approaches and examined their energy footprint on two Android devices with four execution scenarios. Additionally, we extended our research by analyzing multiple real-world mobile apps to include a more practical perspective. Regarding execution environments, we also compared the energy consumption of PWAs executed in different web-browsers. The results based on sample and real-world apps show that the used development approach influences the energy footprint of a mobile app. Native development shows the lowest energy consumption. PWAs, albeit having a higher energy consumption than native apps, are a viable alternative to other mobile cross-platform development (MCPD) approaches. The experiments could not assert an inherent technological disadvantage of PWAs in contrast to other MCPD approaches when considering UI energy consumption. Moreover, the web-browser engine used to execute the PWA has a significant influence on the energy footprint of the app.}
+}
+
+@INPROCEEDINGS{jsonXml:2012,
+  author={Lin, Boci and Chen, Yan and Chen, Xu and Yu, Yingying},
+  booktitle={2012 International Conference on Computer Science and Service System}, 
+  title={Comparison between JSON and XML in Applications Based on AJAX}, 
+  year={2012},
+  volume={},
+  number={},
+  pages={1174-1177},
+  keywords={XML;Reactive power;Educational institutions;Servers;Standards;Ajax;XML;JSON;J2EE},
+  doi={10.1109/CSSS.2012.297}
+}
+
+% Novos artigos
+@INPROCEEDINGS{cwvQoE,
+  author={Wehner, Nikolas and Amir, Monisha and Seufert, Michael and Schatz, Raimund and Hoßfeld, Tobias},
+  booktitle={2022 14th International Conference on Quality of Multimedia Experience (QoMEX)}, 
+  title={A Vital Improvement? Relating Google's Core Web Vitals to Actual Web QoE}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Crowdsourcing;Measurement;Web services;Loading;Web pages;Process control;User experience;Quality of Experience;Web QoE;Core Web Vitals;Crowdsourcing;Emulation},
+  doi={10.1109/QoMEX55416.2022.9900881}}
+
+@article{pageExp:2022,
+  author = {NONJAH, Fabiana; KUPSKI, Larisse},
+  title = {Page Experience: Primeiras Percepções Sobre o Novo Algoritmo do Google no SEO de Empresas com Atuação no Mercado Brasileiro},
+  journal = {Não especificado},
+  year = {2023}
+}
+
+@article{performanceAspects,
+  author = {MOGHADAM, Mahshid Helali et al.},
+  title = {Machine Learning to Guide Performance Testing: An Autonomous Test Framework},
+  journal = {Research Institutes of Sweden (RISE) SICS, Sweden; Mälardalen University, Västerås, Sweden},
+  year = {2023}
+}
+
+@article{webPerformanceOptimize:2023,
+  title={Optimize along the way: An industrial case study on web performance},
+  author={van Riet, Jasper and Malavolta, Ivano and Ghaleb, Taher A},
+  journal={Journal of Systems and Software},
+  volume={198},
+  pages={111593},
+  year={2023},
+  publisher={Elsevier},
+  doi = {10.1016/j.jss.2022.111593},
+}
+
+@inproceedings{webAutoscaling:2022,
+  title={Web-applications fault tolerance and autoscaling provided by the combined method of databases scaling},
+  author={Korobeinikova, Tetiana and Maidaniuk, Volodymyr and Romanyuk, Olexandr and Chekhmestruk, Roman and Romanyuk, Oksana and Romanyuk, Sergey},
+  booktitle={2022 12th International Conference on Advanced Computer Information Technologies (ACIT)},
+  pages={27--32},
+  year={2022},
+  organization={IEEE},
+  doi = {10.1109/ACIT54803.2022.9913098}
+}
+
+@inproceedings{clientServerSide:2020,
+  title={Comparison between client-side and server-side rendering in the web development},
+  author={Iskandar, Taufan Fadhilah and Lubis, Muharman and Kusumasari, Tien Fabrianti and Lubis, Arif Ridho},
+  booktitle={IOP Conference Series: Materials Science and Engineering},
+  volume={801},
+  number={1},
+  pages={012136},
+  year={2020},
+  organization={IOP Publishing},
+  doi = {10.1088/1757-899X/801/1/012136}
+}
+
+
+@article{jsonXmlCaseStudy:2009,
+  title={Comparison of JSON and XML data interchange formats: a case study.},
+  author={Nurseitov, Nurzhan and Paulson, Michael and Reynolds, Randall and Izurieta, Clemente},
+  booktitle = {22nd International Conference on Computer Applications in Industry and Engineering},
+  journal={Caine},
+  volume={9},
+  pages={157--162},
+  year={2009}
+}
+
+@article{jsonXmlApiResponse:2021,
+  author = {TIWARY, Gyan P.; STROULIA, Eleni; SRIVASTAVA, Abhishek},
+  title = {Compression of XML and JSON API Responses},
+  journal = {IEEE Access},
+  volume = {9},
+  year = {2021},
+  pages = {57426--57439},
+  doi = {10.1109/ACCESS.2021.3073041}
+}
+
+@misc{google_core_web_vitals,
+  author = {GOOGLE DEVELOPERS},
+  title = {Explorando e aprendendo sobre os Core Web Vitals},
+  year = {2024},
+  url = {https://web.dev/explore/learn-core-web-vitals?hl=pt-br},
+  note = {Acessado em: 03 nov. 2024}
+}
+
+@misc{meredova2023ssr,
+  author = {Meredova, Aylar},
+  title = {Comparison of Server-Side Rendering Capabilities of React and Vue},
+  year = {2023},
+  howpublished = {Bachelor's Thesis, Haaga-Helia University of Applied Sciences, Helsinki, Finland}
+}
+
+
+@book{book:wohlin,
+author = {Wohlin, Claes and Runeson, Per and Hst, Martin and Ohlsson, Magnus C. and Regnell, Bjrn and Wessln, Anders},
+title = {Experimentation in Software Engineering},
+year = {2012},
+isbn = {3642290434},
+publisher = {Springer Publishing Company, Incorporated},
+}
+
+% Novos artigos - focando em SSR e CSR
+@mastersthesis{ollila:2021,
+  author = {Ollila, Risto},
+  title = {A performance comparison of rendering strategies in open source web frontend frameworks},
+  year = {2021},
+  school = {University of Helsinki, Faculty of Science},
+  type = {Master's Thesis}
+}
+
+@article{gangishetti:2026,
+  author = {Gangishetti, Somraju and Jain, Vivek},
+  title = {Comparative Analysis of Client-Side vs. Server-Side Rendering for Large-Scale Content Platforms},
+  journal = {International Journal of AI, BigData, Computational and Management Studies},
+  volume = {7},
+  number = {1},
+  pages = {74--80},
+  year = {2026},
+  doi = {10.63282/3050-9416.IJAIBDCMS-V7I1P112}
+}
+
+@article{verma:2024,
+  author = {Verma, Darshan and Aland, Parmeshwari},
+  title = {A Comparative Review of Server Rendering and Client Side Rendering in Web Development},
+  journal = {International Journal of Scientific Research and Engineering Trends},
+  volume = {10},
+  number = {2},
+  pages = {521--530},
+  year = {2024},
+  issn = {2395-566X}
+}
+
+@article{sikder:2016,
+  author = {Sikder, Abu Sayed},
+  title = {A Pioneering Investigation into Web Performance Optimization's Impact on User Experience and Business Success},
+  journal = {International Journal of Imminent Science and Technology},
+  volume = {1},
+  pages = {186--198},
+  year = {2016},
+  doi = {10.70774/ijist.v1i1.8}
+}
+
+
+% Refs para análise Cliff's Delta (muito dos artigos são mais antigos, mas por ser uma medida de efeito, ela é relevante para o nosso estudo)
+
+@article{Cliff1993,
+  author = {Cliff, Norman},
+  title = {Dominance statistics: Ordinal analyses to answer ordinal questions},
+  journal = {Psychological Bulletin},
+  volume = {114},
+  number = {3},
+  pages = {494--509},
+  year = {1993},
+  doi = {10.1037//0033-2909.114.3.494}
+}
+
+@inproceedings{Romano2006,
+  author = {Romano, Jeanine and Kromrey, Jeffrey D. and Coraggio, Jesse and Skowronek, Jeff},
+  title = {Appropriate statistics for ordinal level data: Should we really be using t-test and {Cohen's} d for evaluating group differences on the {NSSE} and similar surveys?},
+  booktitle = {Annual Meeting of the Florida Association of Institutional Research},
+  year = {2006},
+  address = {Cocoa Beach, FL}
+}
+
+@article{Kitchenham2024,
+  author = {Kitchenham, Barbara and Madeyski, Lech},
+  title = {Recommendations for analysing and meta-analysing small sample size software engineering experiments},
+  journal = {Empirical Software Engineering},
+  volume = {29},
+  number = {6},
+  pages = {137},
+  year = {2024},
+  doi = {10.1007/s10664-024-10504-1}
+}
+
+@article{Kitchenham2017,
+  author = {Kitchenham, Barbara and Madeyski, Lech and Budgen, David and Keung, Jacky and Brereton, Pearl and Charters, Stuart and Gibbs, Shirley and Pohthong, Amnart},
+  title = {Robust statistical methods for empirical software engineering},
+  journal = {Empirical Software Engineering},
+  volume = {22},
+  number = {2},
+  pages = {579--630},
+  year = {2017},
+  doi = {10.1007/s10664-016-9437-5}
+}
+
+@article{Torkar2022,
+  author = {Torkar, Richard and Furia, Carlo Alberto and Feldt, Robert and {Oliveira Neto}, Francisco Gomes de and Gren, Lucas and Lenberg, Per and Ernst, Neil A.},
+  title = {A method to assess and argue for practical significance in software engineering},
+  journal = {{IEEE} Transactions on Software Engineering},
+  volume = {48},
+  number = {6},
+  pages = {2053--2065},
+  year = {2022},
+  doi = {10.1109/TSE.2020.3048991}
+}
+
+@book{efron:1994,
+  author = {Efron, Bradley and Tibshirani, Robert J.},
+  title = {An Introduction to the Bootstrap},
+  publisher = {Chapman \& Hall/CRC},
+  year = {1994}
+}

@@ -1,0 +1,25 @@
+\begin{table*}[!ht]
+\centering
+\footnotesize
+\caption{\textcolor{darkgreen}{Delta de Cliff ($\delta$) para LCP — comparações par a par selecionadas por tamanho de conjunto de dados}}
+\label{tab:cliffs-delta}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\textbf{Comparação} & \textbf{XS} & \textbf{S} & \textbf{M} & \textbf{L} & \textbf{XL} & \textbf{Interpretação} \\
+\hline
+CSR vs.\ CSR + Gzip               & 1,00 & 1,00 & 1,00 & 1,00 & 1,00 & Grande \\
+CSR vs.\ CSR + Minificação        & 1,00 & 1,00 & 1,00 & 1,00 & 1,00 & Grande \\
+CSR + Gzip vs.\ CSR + Min.\ + Gzip & 0,66 & 1,00 & 1,00 & 1,00 & 1,00 & Grande \\
+CSR + Min.\ + Gzip vs.\ SSR + Gzip & 1,00 & 1,00 & 1,00 & 1,00 & 1,00 & Grande \\
+SSR vs.\ SSR + Gzip               & 1,00 & 1,00 & 1,00 & 1,00 & 1,00 & Grande \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\begin{flushleft}
+\footnotesize
+XS = Extra-Small; S = Small; M = Medium; L = Large; XL = Extra-Large.
+$\delta = 1{,}0$ com IC$_{95\%}$ $[1{,}0;\,1{,}0]$ indica separação completa entre grupos.
+Escala: $|\delta| < 0{,}147$ = negligível; $0{,}147$--$0{,}330$ = pequeno; $0{,}330$--$0{,}474$ = médio; $|\delta| \geq 0{,}474$ = grande~\cite{Romano2006}.
+IC de 95\% calculados via \textit{bootstrap}~\cite{efron:1994}.
+\end{flushleft}
+\end{table*}

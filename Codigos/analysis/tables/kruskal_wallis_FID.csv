@@ -1,0 +1,6 @@
+size,metric,statistic,pvalue,significant
+extra-small,FID (ms),0.0,1.0,False
+small,FID (ms),55.965154867256636,8.26194063955258e-11,True
+medium,FID (ms),56.232067127344514,7.279706585167657e-11,True
+large,FID (ms),44.79560922674528,1.5965294743799138e-08,True
+extra-large,FID (ms),41.00351593985385,9.367451396122633e-08,True

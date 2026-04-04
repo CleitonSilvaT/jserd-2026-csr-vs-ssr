@@ -1,0 +1,25 @@
+% Tabela: Medianas de LCP (segundos) por condição e tamanho de conjunto de dados
+\begin{table*}[htbp]
+\centering
+\footnotesize
+\caption{\novo{Medianas de LCP (segundos) por condição e tamanho de conjunto de dados}}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Condição} & \textbf{Extra-Small} & \textbf{Small} & \textbf{Medium} & \textbf{Large} & \textbf{Extra-Large} \\
+\hline
+CSR (baseline)               & 4,21  & 11,64 & 40,62 & 83,85  & 127,39 \\
+CSR + Minificação            & 3,08  &  6,46 & 20,05 & 40,32  &  60,59 \\
+CSR + Gzip                   & 2,26  &  2,48 &  3,96 &  6,35  &   8,58 \\
+CSR + Minificação + Gzip     & 2,11  &  2,41 &  3,42 &  5,25  &   6,95 \\
+SSR (baseline)               & 1,53  &  3,19 &  9,65 & 19,57  &  29,35 \\
+\textbf{SSR + Gzip}          & \textbf{0,93} & \textbf{0,94} & \textbf{1,10} & \textbf{1,28} & \textbf{1,46} \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\begin{flushleft}
+\footnotesize
+\textbf{*} Em negrito: melhor resultado por tamanho.
+Tamanhos de conjunto de dados: Extra-Small $\approx$ 498~kB; Small $\approx$ 2~MB; Medium $\approx$ 7,9~MB; Large $\approx$ 16,8~MB; Extra-Large $\approx$ 26~MB.
+\end{flushleft}
+\label{tab:lcp-medians}
+\end{table*}

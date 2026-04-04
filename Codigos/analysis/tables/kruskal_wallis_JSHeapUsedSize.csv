@@ -1,0 +1,6 @@
+size,metric,statistic,pvalue,significant
+extra-small,JS Heap Used Size (Kb),10.803278688524586,0.05542295015436402,False
+small,JS Heap Used Size (Kb),10.449180327868845,0.06346352401442637,False
+medium,JS Heap Used Size (Kb),1.4465573770492028,0.9191534571485297,False
+large,JS Heap Used Size (Kb),29.08393442622949,2.2324785417443633e-05,True
+extra-large,JS Heap Used Size (Kb),43.99868852459019,2.3176442472257417e-08,True

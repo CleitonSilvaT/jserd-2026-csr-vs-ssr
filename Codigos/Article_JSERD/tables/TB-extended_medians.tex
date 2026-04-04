@@ -1,0 +1,49 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{\textcolor{darkgreen}{Medianas de LCP, FCP, TTI (s) e JS Heap (MB) por condição e tamanho de conjunto de dados}}
+\label{tab:extended_medians}
+\begin{tabular}{|l|l|c|c|c|c|c|}
+\hline
+\textbf{Métrica} & \textbf{Condição} & \textbf{XS} & \textbf{S} & \textbf{M} & \textbf{L} & \textbf{XL} \\
+\hline
+\multirow{6}{*}{\textbf{LCP (s)}}
+  & CSR                       & 4,21  & 11,64 & 40,61 & 83,85  & 127,39 \\ \cline{2-7}
+  & CSR + Minificação         & 3,08  &  6,46 & 20,05 & 40,32  &  60,59 \\ \cline{2-7}
+  & CSR + Gzip                & 2,26  &  2,48 &  3,96 &  6,35  &   8,58 \\ \cline{2-7}
+  & CSR + Min.\ + Gzip        & 2,11  &  2,41 &  3,42 &  5,25  &   6,95 \\ \cline{2-7}
+  & SSR                       & 1,53  &  3,19 &  9,65 & 19,57  &  29,34 \\ \cline{2-7}
+  & \textbf{SSR + Gzip}       & \textbf{0,93} & \textbf{0,94} & \textbf{1,10} & \textbf{1,28} & \textbf{1,46} \\
+\hline
+\multirow{6}{*}{\textbf{FCP (s)}}
+  & CSR                       & 1,58  & 1,58  & 1,58  &  1,58  &  1,58 \\ \cline{2-7}
+  & CSR + Minificação         & 1,58  & 1,58  & 1,58  &  1,58  &  1,58 \\ \cline{2-7}
+  & CSR + Gzip                & 1,58  & 1,58  & 1,58  &  1,58  &  1,58 \\ \cline{2-7}
+  & CSR + Min.\ + Gzip        & 1,58  & 1,58  & 1,58  &  1,58  &  1,58 \\ \cline{2-7}
+  & SSR                       & 1,23  & 2,95  & 9,60  & 19,51  & 29,28 \\ \cline{2-7}
+  & \textbf{SSR + Gzip}       & \textbf{0,63} & \textbf{0,69} & \textbf{1,05} & \textbf{1,22} & \textbf{1,40} \\
+\hline
+\multirow{6}{*}{\textbf{TTI (s)}}
+  & CSR                       & 4,24  & 11,66 & 40,64 & 83,87  & 127,41 \\ \cline{2-7}
+  & CSR + Minificação         & 3,10  &  6,49 & 20,08 & 40,35  &  60,62 \\ \cline{2-7}
+  & CSR + Gzip                & 2,27  &  2,50 &  3,99 &  6,37  &   8,60 \\ \cline{2-7}
+  & CSR + Min.\ + Gzip        & 2,14  &  2,44 &  3,44 &  5,27  &   6,97 \\ \cline{2-7}
+  & SSR                       & 1,53  &  3,19 &  9,93 & 20,27  &  30,60 \\ \cline{2-7}
+  & \textbf{SSR + Gzip}       & \textbf{0,93} & \textbf{0,94} & \textbf{1,39} & \textbf{2,00} & \textbf{2,72} \\
+\hline
+\multirow{6}{*}{\textbf{JS Heap (MB)}}
+  & CSR                       & 119,49 & 220,72 & 615,12 & 786,58 & 988,90 \\ \cline{2-7}
+  & CSR + Minificação         & 121,42 & 219,59 & 625,39 & 832,83 & 850,38 \\ \cline{2-7}
+  & CSR + Gzip                & 121,46 & 218,63 & 626,12 & 768,27 & 977,44 \\ \cline{2-7}
+  & CSR + Min.\ + Gzip        & \textbf{111,55} & \textbf{216,38} & 629,11 & 824,76 & 972,55 \\ \cline{2-7}
+  & SSR                       & 111,67 & 221,74 & \textbf{612,79} & \textbf{664,81} & 769,32 \\ \cline{2-7}
+  & SSR + Gzip                & 118,99 & 220,46 & 618,69 & 680,80 & \textbf{767,71} \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\begin{flushleft}
+\footnotesize
+\textbf{*} Em negrito: melhor resultado por métrica e tamanho (menor é melhor).
+XS = Extra-Small ($\approx$498~kB); S = Small ($\approx$2~MB); M = Medium ($\approx$7,9~MB); L = Large ($\approx$16,8~MB); XL = Extra-Large ($\approx$26~MB).
+\end{flushleft}
+\end{table*}
